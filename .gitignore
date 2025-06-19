@@ -1,0 +1,5 @@
+.amhenv/
+*.csv
+*.pyc
+data/
+.vscode/
