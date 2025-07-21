@@ -7,16 +7,19 @@
 ## Project Structure
 Amharic-ecommerce-data-extractor
 <pre>
-|_____.env/
+|_____.amhenv/
 |---- .github/
 |     |--- workflows
 |     |    |--- unittests.yml
 |---- data/
 |     |---- telegram_data.csv (raw)
 |     |---- cleaned_message.csv (Cleaned)
+|-----conLL/
+|     |____ amharic_ner.conll
 |---- notebooks/
 |     |--- README.md
 |     |--- data-ingestion-preprocessing.ipynb
+|     |____ data-labekubg-conLL.ipynb
 |---- scripts/
 |     |--- __init__.py
 |     |--- data_loader.py
@@ -24,9 +27,12 @@ Amharic-ecommerce-data-extractor
 |     |--- telegram_scrapper.py (function for scraping telegram channel data)
 |-----src/
 |     |--- __init__.py
+|     |____ labeling/
+|           |____ label_conll_amharic.py
 |---- tests/
 |     |--- __init__.py
 |     |--- test_sample.py
+|     |____ test_ner.py
 |---- .gitignore
 |---- requirements.txt (Dependencies)
 |---- LICENSE
