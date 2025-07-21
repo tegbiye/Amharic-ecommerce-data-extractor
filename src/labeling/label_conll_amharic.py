@@ -41,6 +41,10 @@ def load_dataset(file_path):
 # Helper function to detect entities in Amharic text
 def label_entities(message):
     try:
+        if not message.strip():  # Check for empty or whitespace-only message
+            logger.error(f"Error labeling message: Empty message provided")
+            return [], []
+        
         tokens = word_tokenize(message)  # Tokenize the message
         labels = ['O'] * len(tokens)  # Initialize all tokens as 'O'
         logger.debug(f"Tokenized message: {tokens[:10]}... (total {len(tokens)} tokens)")
@@ -53,24 +57,35 @@ def label_entities(message):
         ]
         location_keywords = ['መገናኛ', 'ደራርቱ', 'መሰረት', 'ደፋር', 'ሞል', 'አዲስ', 'አበባ', 'ቢሮ', 'S05S06']
         price_pattern = r'(ዋጋ፦|በ)?\s*\d+\s*(ብር|birr|Birr|ETB)'
+        product_modifier_keywords = ['ለሕፃን', 'የልጆች', 'የልብስ', 'የእጅ', 'የሚሰራ']
 
         # Label Products
-        for i, token in enumerate(tokens):
-            if token in product_keywords:
+        i = 0
+        while i < len(tokens):
+            if tokens[i] in product_keywords or tokens[i] in product_modifier_keywords:
                 labels[i] = 'B-Product'
-                if i + 1 < len(tokens) and tokens[i + 1] in product_keywords:
-                    labels[i + 1] = 'I-Product'
-            elif token in ['ለሕፃን', 'የልጆች', 'የልብስ', 'የእጅ', 'የሚሰራ']:
-                labels[i] = 'B-Product'
-                if i + 1 < len(tokens) and tokens[i + 1] not in location_keywords and not re.match(r'\d+', tokens[i + 1]):
-                    labels[i + 1] = 'I-Product'
+                # Look ahead to label subsequent tokens as I-Product
+                j = i + 1
+                while j < len(tokens) and (tokens[j] in product_keywords or tokens[j] in product_modifier_keywords or (tokens[j] not in location_keywords and not re.match(r'\d+', tokens[j]))):
+                    labels[j] = 'I-Product'
+                    j += 1
+                i = j  # Skip processed tokens
+            else:
+                i += 1
 
         # Label Locations
-        for i, token in enumerate(tokens):
-            if token in location_keywords:
+        i = 0
+        while i < len(tokens):
+            if tokens[i] in location_keywords:
                 labels[i] = 'B-LOC'
-                if i + 1 < len(tokens) and tokens[i + 1] in location_keywords:
-                    labels[i + 1] = 'I-LOC'
+                # Look ahead to label subsequent tokens as I-LOC
+                j = i + 1
+                while j < len(tokens) and tokens[j] in location_keywords:
+                    labels[j] = 'I-LOC'
+                    j += 1
+                i = j  # Skip processed tokens
+            else:
+                i += 1
 
         # Label Prices
         price_matches = re.finditer(price_pattern, message)
@@ -95,7 +110,7 @@ def label_entities(message):
     except Exception as e:
         logger.error(f"Error labeling message: {message[:50]}...: {str(e)}")
         return [], []
-
+    
 # Convert to CoNLL format and save to file
 def save_conll(messages, output_file, max_messages=50):
     try:
