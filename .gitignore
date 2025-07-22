@@ -1,7 +1,8 @@
 .amhenv/
 *.csv
 *.pyc
-data/
+/data/*
+!/data/model_comparison.csv
 .vscode/
 .env
 __pycache__/
