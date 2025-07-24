@@ -1,0 +1,114 @@
+2025-07-21 12:35:31,968 - INFO - Starting fine-tuning process
+2025-07-21 12:35:36,900 - INFO - Loaded 50 sentences from ../conLL/amharic_ner.conll
+2025-07-21 12:35:48,818 - INFO - Split dataset: 40 train, 10 validation
+2025-07-21 12:36:20,377 - INFO - Split dataset: 40 train, 10 validation
+2025-07-21 12:36:28,888 - INFO - Loaded model and tokenizer: Davlan/afro-xlmr-base
+2025-07-21 12:36:40,968 - ERROR - Error in tokenization and label alignment: 'I-PRICE'
+2025-07-21 12:53:43,734 - INFO - Starting fine-tuning process
+2025-07-21 12:53:46,102 - INFO - Loaded 50 sentences from ../conLL/amharic_ner.conll
+2025-07-21 12:53:46,104 - INFO - Unique labels in dataset: {'I-PRICE', 'B-Product', 'B-LOC', 'B-PRICE', 'I-Product', 'O'}
+2025-07-21 12:53:46,104 - ERROR - Labels in dataset not in label2id: {'I-PRICE', 'B-PRICE'}
+2025-07-21 12:54:18,224 - INFO - Split dataset: 40 train, 10 validation
+2025-07-21 12:54:25,009 - INFO - Loaded model and tokenizer: Davlan/afro-xlmr-base
+2025-07-21 12:54:27,526 - ERROR - Label 'I-PRICE' not found in label2id: {'O': 0, 'B-Product': 1, 'I-Product': 2, 'B-Price': 3, 'I-Price': 4, 'B-LOC': 5, 'I-LOC': 6}
+2025-07-21 12:54:27,527 - ERROR - Error in tokenization and label alignment: 'I-PRICE'
+2025-07-21 13:04:22,096 - INFO - Starting fine-tuning process
+2025-07-21 13:04:24,920 - INFO - Loaded 50 sentences from ../conLL/amharic_ner.conll
+2025-07-21 13:04:24,920 - INFO - Unique labels in dataset: {'I-PRICE', 'B-Product', 'B-LOC', 'B-PRICE', 'I-Product', 'O'}
+2025-07-21 13:04:30,242 - INFO - Split dataset: 40 train, 10 validation
+2025-07-21 13:04:36,786 - INFO - Loaded model and tokenizer: Davlan/afro-xlmr-base
+2025-07-21 13:04:44,974 - INFO - Tokenized datasets successfully
+2025-07-21 13:09:56,011 - INFO - Starting fine-tuning process
+2025-07-21 13:09:58,182 - INFO - Loaded 50 sentences from ../conLL/amharic_ner.conll
+2025-07-21 13:09:58,182 - INFO - Unique labels in dataset: {'I-PRICE', 'B-Product', 'B-LOC', 'B-PRICE', 'I-Product', 'O'}
+2025-07-21 13:10:00,801 - INFO - Split dataset: 40 train, 10 validation
+2025-07-21 13:10:06,458 - INFO - Loaded model and tokenizer: Davlan/afro-xlmr-base
+2025-07-21 13:10:06,972 - INFO - Tokenized datasets successfully
+2025-07-21 13:17:41,773 - INFO - Starting fine-tuning process
+2025-07-21 13:17:42,123 - INFO - Loaded 50 sentences from ../conLL/amharic_ner.conll
+2025-07-21 13:17:42,123 - INFO - Unique labels in dataset: {'B-PRICE', 'I-Product', 'B-LOC', 'O', 'B-Product', 'I-PRICE'}
+2025-07-21 13:18:45,072 - INFO - Loaded 50 sentences from ../conLL/amharic_ner.conll
+2025-07-21 13:18:45,072 - INFO - Unique labels in dataset: {'B-PRICE', 'I-Product', 'B-LOC', 'O', 'B-Product', 'I-PRICE'}
+2025-07-21 13:18:49,757 - INFO - Split dataset: 40 train, 10 validation
+2025-07-21 13:19:07,472 - INFO - Loaded model and tokenizer: Davlan/afro-xlmr-base
+2025-07-21 13:19:09,792 - INFO - Tokenized datasets successfully
+2025-07-21 13:19:26,054 - INFO - Initialized trainer
+2025-07-21 13:24:19,738 - ERROR - Error computing metrics: name 'id2label' is not defined
+2025-07-21 13:26:13,511 - ERROR - Error computing metrics: name 'id2label' is not defined
+2025-07-21 13:27:20,811 - ERROR - Error computing metrics: name 'id2label' is not defined
+2025-07-21 13:28:12,230 - INFO - Training completed
+2025-07-21 13:28:53,674 - INFO - Model and tokenizer saved to ./amharic_ner_model
+2025-07-21 14:41:33,426 - INFO - Starting fine-tuning process
+2025-07-21 14:41:36,195 - INFO - Loaded 50 sentences from ../conLL/amharic_ner.conll
+2025-07-21 14:41:36,211 - INFO - Unique labels in dataset: {'B-PRICE', 'I-Product', 'B-LOC', 'O', 'B-Product', 'I-PRICE'}
+2025-07-21 14:41:39,277 - INFO - Split dataset: 40 train, 10 validation
+2025-07-21 14:42:12,207 - INFO - Loaded model and tokenizer: Davlan/afro-xlmr-base
+2025-07-21 14:42:16,559 - INFO - Tokenized datasets successfully
+2025-07-21 14:42:37,894 - INFO - Initialized trainer
+2025-07-21 14:44:35,290 - ERROR - Error computing metrics: name 'id2label' is not defined
+2025-07-21 14:45:47,288 - ERROR - Error computing metrics: name 'id2label' is not defined
+2025-07-21 14:46:52,487 - ERROR - Error computing metrics: name 'id2label' is not defined
+2025-07-21 14:48:13,612 - INFO - Training completed
+2025-07-21 15:06:01,974 - INFO - Using transformers version: 4.53.2
+2025-07-21 15:06:02,053 - INFO - Device available: CPU
+2025-07-21 15:07:27,562 - INFO - Starting fine-tuning process
+2025-07-21 15:07:30,732 - INFO - Loaded 50 sentences from ../conLL/amharic_ner.conll
+2025-07-21 15:07:30,738 - INFO - Unique labels in dataset: {'B-PRICE', 'I-Product', 'B-LOC', 'O', 'B-Product', 'I-PRICE'}
+2025-07-21 15:07:38,193 - INFO - Split dataset: 40 train, 10 validation
+2025-07-21 15:08:25,282 - INFO - Loaded model and tokenizer: Davlan/afro-xlmr-base
+2025-07-21 15:10:13,936 - INFO - Loaded model and tokenizer: Davlan/afro-xlmr-base
+2025-07-21 15:10:22,279 - INFO - Tokenized datasets successfully
+2025-07-21 15:10:51,437 - INFO - Initialized trainer
+2025-07-21 15:12:03,890 - INFO - Starting fine-tuning process
+2025-07-21 15:12:06,169 - INFO - Loaded 50 sentences from ../conLL/amharic_ner.conll
+2025-07-21 15:12:06,169 - INFO - Unique labels in dataset: {'B-PRICE', 'I-Product', 'B-LOC', 'O', 'B-Product', 'I-PRICE'}
+2025-07-21 15:12:09,007 - INFO - Split dataset: 40 train, 10 validation
+2025-07-21 15:12:14,885 - INFO - Loaded model and tokenizer: Davlan/afro-xlmr-base
+2025-07-21 15:12:18,022 - INFO - Tokenized datasets successfully
+2025-07-21 15:12:24,178 - INFO - Initialized trainer
+2025-07-21 15:18:40,635 - INFO - Computed evaluation metrics
+2025-07-21 15:18:41,634 - ERROR - Error computing metrics: 'accuracy'
+2025-07-21 15:21:04,741 - INFO - Computed evaluation metrics
+2025-07-21 15:21:04,781 - ERROR - Error computing metrics: 'accuracy'
+2025-07-21 15:22:14,071 - INFO - Computed evaluation metrics
+2025-07-21 15:22:14,071 - ERROR - Error computing metrics: 'accuracy'
+2025-07-21 15:23:41,512 - INFO - Training completed
+2025-07-21 16:16:20,043 - INFO - Starting fine-tuning process
+2025-07-21 16:16:22,653 - INFO - Loaded 50 sentences from ../conLL/amharic_ner.conll
+2025-07-21 16:16:22,653 - INFO - Unique labels in dataset: {'B-PRICE', 'I-Product', 'B-LOC', 'O', 'B-Product', 'I-PRICE'}
+2025-07-21 16:16:22,653 - INFO - Label counts: {'B-PRICE': 35, 'I-Product': 127, 'B-LOC': 100, 'O': 1212, 'B-Product': 21, 'I-PRICE': 83}
+2025-07-21 16:16:28,057 - INFO - Split dataset: 40 train, 10 validation
+2025-07-21 16:17:28,934 - INFO - Loaded model and tokenizer: Davlan/afro-xlmr-base
+2025-07-21 16:17:32,743 - INFO - Tokenized datasets successfully
+2025-07-21 16:17:35,586 - INFO - Initialized trainer
+2025-07-21 16:21:07,681 - INFO - Evaluation metrics: {'LOC': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(20)}, 'PRICE': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(20)}, 'Product': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(4)}, 'micro avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}, 'macro avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}, 'weighted avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}}
+2025-07-21 16:22:44,704 - INFO - Evaluation metrics: {'LOC': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(20)}, 'PRICE': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(20)}, 'Product': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(4)}, 'micro avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}, 'macro avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}, 'weighted avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}}
+2025-07-21 16:24:23,749 - INFO - Evaluation metrics: {'LOC': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(20)}, 'PRICE': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(20)}, 'Product': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(4)}, 'micro avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}, 'macro avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}, 'weighted avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}}
+2025-07-21 16:25:39,248 - INFO - Evaluation metrics: {'LOC': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(20)}, 'PRICE': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(20)}, 'Product': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(4)}, 'micro avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}, 'macro avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}, 'weighted avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}}
+2025-07-21 16:27:30,715 - INFO - Evaluation metrics: {'LOC': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(20)}, 'PRICE': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(20)}, 'Product': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(4)}, 'micro avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}, 'macro avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}, 'weighted avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(44)}}
+2025-07-21 16:28:30,521 - INFO - Training completed
+2025-07-21 16:46:31,792 - INFO - Starting fine-tuning process
+2025-07-21 16:46:35,901 - INFO - Loaded 1000 sentences from ../conLL/amharic_ner.conll
+2025-07-21 16:46:35,903 - INFO - Unique labels in dataset: {'B-PRICE', 'I-Product', 'B-LOC', 'O', 'I-LOC', 'B-Product', 'I-PRICE'}
+2025-07-21 16:46:35,909 - INFO - Label counts: {'B-PRICE': 846, 'I-Product': 1282, 'B-LOC': 2700, 'O': 36992, 'I-LOC': 1441, 'B-Product': 207, 'I-PRICE': 1740}
+2025-07-21 16:46:43,482 - INFO - Split dataset: 800 train, 200 validation
+2025-07-21 16:47:44,707 - INFO - Loaded model and tokenizer: Davlan/afro-xlmr-base
+2025-07-21 16:47:48,842 - INFO - Tokenized datasets successfully
+2025-07-21 16:48:13,769 - INFO - Initialized trainer
+2025-07-21 16:58:35,882 - INFO - Using transformers version: 4.53.2
+2025-07-21 16:58:35,882 - INFO - Device available: CPU
+2025-07-21 16:58:36,622 - INFO - Starting fine-tuning process
+2025-07-21 16:58:37,082 - INFO - Loaded 200 sentences from ../conLL/amharic_ner.conll
+2025-07-21 16:58:37,082 - INFO - Unique labels in dataset: {'B-LOC', 'I-PRICE', 'I-Product', 'O', 'B-Product', 'B-PRICE'}
+2025-07-21 16:58:37,082 - INFO - Label counts: {'B-LOC': 398, 'I-PRICE': 343, 'I-Product': 271, 'O': 5099, 'B-Product': 48, 'B-PRICE': 167}
+2025-07-21 16:58:38,002 - INFO - Split dataset: 160 train, 40 validation
+2025-07-21 16:58:50,765 - INFO - Loaded model and tokenizer: Davlan/afro-xlmr-base
+2025-07-21 16:58:52,382 - INFO - Tokenized datasets successfully
+2025-07-21 16:58:54,592 - INFO - Initialized trainer
+2025-07-21 16:59:00,530 - INFO - Tokenized datasets successfully
+2025-07-21 16:59:13,949 - INFO - Initialized trainer
+2025-07-21 17:05:17,208 - INFO - Evaluation metrics: {'LOC': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(78)}, 'PRICE': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(73)}, 'Product': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(7)}, 'micro avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(158)}, 'macro avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(158)}, 'weighted avg': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(158)}}
+2025-07-21 17:12:12,707 - INFO - Evaluation metrics: {'LOC': {'precision': np.float64(1.0), 'recall': np.float64(1.0), 'f1-score': np.float64(1.0), 'support': np.int64(78)}, 'PRICE': {'precision': np.float64(0.7894736842105263), 'recall': np.float64(0.821917808219178), 'f1-score': np.float64(0.8053691275167785), 'support': np.int64(73)}, 'Product': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(7)}, 'micro avg': {'precision': np.float64(0.8961038961038961), 'recall': np.float64(0.8734177215189873), 'f1-score': np.float64(0.8846153846153846), 'support': np.int64(158)}, 'macro avg': {'precision': np.float64(0.5964912280701754), 'recall': np.float64(0.6073059360730594), 'f1-score': np.float64(0.6017897091722595), 'support': np.int64(158)}, 'weighted avg': {'precision': np.float64(0.8584277148567623), 'recall': np.float64(0.8734177215189873), 'f1-score': np.float64(0.865771812080537), 'support': np.int64(158)}}
+2025-07-21 17:16:12,720 - INFO - Evaluation metrics: {'LOC': {'precision': np.float64(1.0), 'recall': np.float64(1.0), 'f1-score': np.float64(1.0), 'support': np.int64(78)}, 'PRICE': {'precision': np.float64(0.775), 'recall': np.float64(0.8493150684931506), 'f1-score': np.float64(0.8104575163398693), 'support': np.int64(73)}, 'Product': {'precision': np.float64(0.0), 'recall': np.float64(0.0), 'f1-score': np.float64(0.0), 'support': np.int64(7)}, 'micro avg': {'precision': np.float64(0.8860759493670886), 'recall': np.float64(0.8860759493670886), 'f1-score': np.float64(0.8860759493670886), 'support': np.int64(158)}, 'macro avg': {'precision': np.float64(0.5916666666666667), 'recall': np.float64(0.6164383561643835), 'f1-score': np.float64(0.6034858387799564), 'support': np.int64(158)}, 'weighted avg': {'precision': np.float64(0.8517405063291138), 'recall': np.float64(0.8860759493670886), 'f1-score': np.float64(0.868122776536775), 'support': np.int64(158)}}
+2025-07-21 17:17:03,616 - INFO - Training completed
+2025-07-21 17:19:46,386 - INFO - Model and tokenizer saved to ../models/amharic_ner_model

@@ -3,10 +3,10 @@
 *.pyc
 /data/*
 !/data/model_comparison.csv
+!/data/interpretability_results.csv
 .vscode/
 .env
 __pycache__/
 *.logs
-*.log
 models/
 
