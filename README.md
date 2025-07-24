@@ -63,7 +63,7 @@ Amharic-ecommerce-data-extractor
 |____ README.md
 </pre>
 
-## Task One
+## Task 1
    1. Data scraping
       Scraped data from seven channels namely:
       - Zemen Express®
@@ -73,12 +73,62 @@ Amharic-ecommerce-data-extractor
       - qnash.com - ቅናሽ ®️
       - አዳማ ገበያ - Adama gebeya
       - Sheger online-store
-      Scraped around 37378 of raw data.
+      - Scraped around 37378 of raw data.
    2. Data Preprocessing
-      Checked for the missing values and found some significant amount of missing values 
-      fixed
-      made cleaning of the Amharic text as the task is for Amharic language where removed english text and other punctuations, emojis, tags.
-      Saved the cleaned message to be used for the task 2
+      - Checked for the missing values and found some significant amount of missing values fixed
+      - made cleaning of the Amharic text as the task is for Amharic language where removed english text and other punctuations, emojis, tags.
+      - Saved the cleaned message to be used for the task 2
+## Task 2
+Based on the task objective 30–50 messages from the "Message" column of the provided cleaned_message.csv dataset is used to create in CoNLL format for Named Entity Recognition (NER). The entities to be identified and labeled include:
+
+   •	Product: Items being advertised 
+
+   •	Price: Monetary values 
+
+   •	Location: Place names or addresses 
+
+   •	Labels follow the BIO scheme: B- (Beginning), I- (Inside), and O (Outside) for each entity type.
+
+1.	Initial Script Development:
+
+      o	Created a Python script (label_conll_amharic.py) to load the dataset, tokenize messages, label entities, and save the output in CoNLL format.
+
+      o	Used NLTK's word_tokenize for tokenization, suitable for Amharic text.
+
+      o	Defined keyword lists for products and locations and a regular expression pattern for prices
+
+      o	Filtered out invalid messages and processed up to 50 messages.
+
+2.	Dataset-Specific Updates:
+
+      o	Updated the script to handle the provided cleaned_message.csv, which contains 37,377 rows, with the "Message" column in Amharic.
+
+      o	Refined keyword lists based on the dataset's content for products, and for locations.
+
+      o	Enhanced product detection with contextual keywords to capture multi-word entities.
+
+3.	Logging Integration:
+
+      o	Added logging using Python's logging module, outputting to both labeling_log.log and the console.
+
+      o	Log levels:
+
+         - INFO: Key steps (e.g., dataset loading, file saving, message processing).
+
+         - DEBUG: Detailed tokenization and labeling output (first 10 tokens per message).
+
+         - WARNING: Non-critical issues (e.g., unmatched price tokens).
+
+         - ERROR: Critical failures (e.g., file loading errors).
+
+      o	Included try-except blocks to log errors and ensure robustness.
+
+4.	Output Generation:
+
+      o	Processed up to 50 valid messages and saved the labeled data to amharic_ner.conll.
+
+      o	Ensured CoNLL format
+
 ## Getting Started
 1. Clone the Repository
    ``` 
@@ -90,7 +140,7 @@ Amharic-ecommerce-data-extractor
    ```
 2. Create environment
    ```
-   python -m venv .venv
+   python -m venv .amhenv
    
    ```
    Windows
