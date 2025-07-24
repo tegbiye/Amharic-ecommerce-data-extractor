@@ -16,9 +16,11 @@ Amharic-ecommerce-data-extractor
 |     |---- cleaned_message.csv (Cleaned)
 |-----conLL/
 |     |____ amharic_ner.conll
+|-----models/
 |---- notebooks/
 |     |--- README.md
 |     |--- data-ingestion-preprocessing.ipynb
+|     |--- finetune-amharic-ner.ipynb
 |     |____ data-labekubg-conLL.ipynb
 |---- scripts/
 |     |--- __init__.py
@@ -29,9 +31,12 @@ Amharic-ecommerce-data-extractor
 |     |--- __init__.py
 |     |____ labeling/
 |           |____ label_conll_amharic.py
+|     |____ ner_model/
+|           |____ finetune_ner_model.py
 |---- tests/
 |     |--- __init__.py
 |     |--- test_sample.py
+|     |--- test_finetune_ner.py
 |     |____ test_ner.py
 |---- .gitignore
 |---- requirements.txt (Dependencies)
