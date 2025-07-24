@@ -16,6 +16,8 @@ Amharic-ecommerce-data-extractor
 |     |---- cleaned_message.csv (Cleaned)
 |     |---- model_comparison.csv   # Model comparison
 |     |---- interpretability_results.csv
+|     |---- vendor_metrics.csv
+|     |---- vendor_scorecard.md
 |-----conLL/
 |     |____ amharic_ner.conll
 |-----models/
@@ -33,6 +35,7 @@ Amharic-ecommerce-data-extractor
 |     |--- finetune-amharic-ner.ipynb
 |     |--- compare_ner_models.ipynb
 |     |--- interpret_ner_model.ipynb
+|     |--- vendor_score_baord.ipynb
 |     |____ data-labeling-conLL.ipynb
 |---- scripts/
 |     |--- __init__.py
@@ -42,11 +45,13 @@ Amharic-ecommerce-data-extractor
 |-----src/
 |     |--- __init__.py
 |     |____ labeling/
-|           |____ label_conll_amharic.py
+|           |____ label_conll_amharic.py  # labeling in conll format
 |     |____ ner_model/
-|           |____ finetune_ner_model.py
+|           |____ finetune_ner_model.py   # finetuning model
 |     |____ compare/
-|           |____ compare_ner_models.py
+|           |____ compare_ner_models.py   # compare by finetuning
+|     |____ vendor_board/
+|           |____ vendor_analytics_board.py # vendor_board visualization
 |---- tests/
 |     |--- __init__.py
 |     |--- test_sample.py

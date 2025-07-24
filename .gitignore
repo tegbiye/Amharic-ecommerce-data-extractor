@@ -4,6 +4,8 @@
 /data/*
 !/data/model_comparison.csv
 !/data/interpretability_results.csv
+!/data/vendor_metrics.csv
+!/data/vendor_scorecard.md
 .vscode/
 .env
 __pycache__/
