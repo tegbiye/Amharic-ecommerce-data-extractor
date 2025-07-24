@@ -14,14 +14,22 @@ Amharic-ecommerce-data-extractor
 |---- data/
 |     |---- telegram_data.csv (raw)
 |     |---- cleaned_message.csv (Cleaned)
+|     |---- model_comparison.csv   # Model comparison
 |-----conLL/
 |     |____ amharic_ner.conll
 |-----models/
+|     |----- amharic_ner_distilbert
+|     |----- amharic_ner_mbert
+|     |----- amharic_ner_xlmr
 |---- notebooks/
 |     |--- README.md
 |     |--- data-ingestion-preprocessing.ipynb
 |     |--- finetune-amharic-ner.ipynb
-|     |____ data-labekubg-conLL.ipynb
+|     |--- compare_ner_models.ipynb
+|     |--- compare_ner_log.log
+|     |--- finetune_ner_log.log
+|     |--- labeling_log.log
+|     |____ data-labeling-conLL.ipynb
 |---- scripts/
 |     |--- __init__.py
 |     |--- data_loader.py
@@ -33,6 +41,8 @@ Amharic-ecommerce-data-extractor
 |           |____ label_conll_amharic.py
 |     |____ ner_model/
 |           |____ finetune_ner_model.py
+|     |____ compare/
+|           |____ compare_ner_models.py
 |---- tests/
 |     |--- __init__.py
 |     |--- test_sample.py
